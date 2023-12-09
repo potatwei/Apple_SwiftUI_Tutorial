@@ -1,9 +1,9 @@
-//
-//  LandmarkList.swift
-//  Landmarks
-//
-//  Created by Shihang Wei on 12/9/23.
-//
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+A view showing a list of landmarks.
+*/
 
 import SwiftUI
 

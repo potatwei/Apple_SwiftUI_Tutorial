@@ -1,23 +1,20 @@
-//
-//  Data.swift
-//  Landmarks
-//
-//  Created by Shihang Wei on 12/8/23.
-//
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+Storage for model data.
+*/
 
 import Foundation
 
-@Observable
-class ModelData {
-    var landmarks: [Landmark] = load("landmarkData.json")
-}
+var landmarks: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-    else {
-        fatalError("Couldn't find \(filename) in main bundle.")
+        else {
+            fatalError("Couldn't find \(filename) in main bundle.")
     }
 
     do {
